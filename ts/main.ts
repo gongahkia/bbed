@@ -1,20 +1,17 @@
+// --- universal state checkers
+
+const modeChecker:number = 0; // --- normal mode: 0, insert mode:1, visual mode:2
+
+// --- updating textarea
 const textArea = document.getElementById("TextArea")!;
 
-textArea.addEventListener("keypress", checkInput);
-
-function checkInput (event:any) {
-    let keyCode:number = event.keyCode;
-    switch (keyCode) {
-        case 27: {
-            alert("oh shit");
+function checkForEscapeKey(event:any) {
+    let localKeyCode = event.keyCode;
+    switch (localKeyCode) {
+        case 27:
+            alert("Escape pressed. Normal mode.");
             break;
-        }
-
-        default: {
-            alert("l");
-            break;
-        }
     }
 }
 
-// figure out why escape key not being registered
+// check to see whether other keys are registered when in different modes
