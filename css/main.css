@@ -3,25 +3,3 @@
 body {
     font-family: 'JetBrains Mono', monospace;
 }
-
-.mainContainer {
-    display:flex;
-}
-
-#TextArea {
-    resize:none;
-    font-size:1rem;
-    font-family: 'JetBrains Mono', monospace;
-}
-
-.item-title {
-    margin-left:10px;
-    margin-right:10px;
-}
-
-.item-titleBox {
-    color:darkgreen;
-    font-size:2rem;
-    margin-left:50px;
-    border:solid;
-}
