@@ -19,7 +19,7 @@ function loadFile(event:any) {
     entryContent.remove();
 
     const overallContent = document.getElementById("overallDiv")!; 
-    overallContent.innerHTML += "<div class='mainScreen'><textarea id='localTextArea' class='localTextArea' rows='35' cols='150' spellcheck='false'></textarea><button id='saveFileButton' type='button'>Save changes</button></div>";
+    overallContent.innerHTML += "<div class='mainScreen'><textarea id='localTextArea' class='localTextArea' rows='35' cols='175' spellcheck='false'></textarea><button id='saveFileButton' type='button'>Save a copy</button></div>";
 
     const saveFileButton = document.getElementById("saveFileButton");
     saveFileButton?.addEventListener("click", saveFile);
